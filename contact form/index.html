@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PHP contact form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="sendmail.php">
+</head>
+<body>
+  <div class="container">  
+    <form id="contact" action="" method="post">
+      <h3>contact form</h3>
+      <h4>Contact me for developing website</h4>
+      <fieldset>
+        <input name="name" placeholder="Your name" type="text" tabindex="1" required autofocus>
+      </fieldset>
+      <fieldset>
+        <input name="email" placeholder="Your Email Address" type="email" tabindex="2" required>
+      </fieldset>
+      <fieldset>
+        <input name="number" placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+      </fieldset>
+      <fieldset>
+        <input name="website" placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+      </fieldset>
+      <fieldset>
+        <textarea name="message" placeholder="Type your message here...." tabindex="5" required></textarea>
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+      </fieldset>
+      <p class="copyright">Designed by <a href="https://prakashshah.com.np" target="_blank" title="contact form">Prakash</a></p>
+    </form>
+  </div>
+
+  <!--javascript for block the resubmission-->
+
+  <script type="text/javascript">
+  if(window.history.replacestate){
+    window.history.replacestate(null,null,window.location.href);
+  }
+</script>
+</body>
+</html>
